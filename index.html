@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/index.css" />
+</head>
+
+<body>
+    <!-- Dùng js để hiện và ẩn modal  -->
+    <div class="qi-modal-sign f-center">
+        <div class="qi-box-modal">
+            <div class="qi-head-modal-signature flex j-between ai-center">
+                <div class="flex ai-center">
+                    <div class="qi-rouded-bg-file">
+                        <img src="image/icon-file.svg" alt="" />
+                    </div>
+                    <p class="qi-text-head-signature">Thêm hồ sơ trình ký</p>
+                </div>
+                <div class="qi-rouded-bg-head">
+                    <img src="image/closeIcon.svg" alt="" />
+                </div>
+            </div>
+            <div class="qi-body-modal-signature">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#tab1">1. Khai báo hồ sơ</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#tab2">2. Trình ký</a></li>
+                    <li><a data-toggle="tab" href="#tab3">3. Chèn ảnh ký</a></li>
+                </ul>
+
+                <div class="tab-content qi-tab-content-signature-2">
+                    <div id="tab1" class="tab-pane fade in active qi-tab-signature">
+                        <div class="flex f-col j-center ai-center" style="width: 100%">
+                            <div class="qi-signature-tab1">
+                                <div class="qi-signature-tab1-head flex j-start ai-center">
+                                    <div class="qi-bg-file-head-signature">
+                                        <img src="image/icon-file.svg" alt="" />
+                                    </div>
+                                    <p>1.1 File trình ký (*)</p>
+                                </div>
+                                <div class="qi-signature-tab1-body">
+                                    <div class="qi-signature-upload-file relative f-center f-col j-start">
+                                        <!-- đoạn xử lý nhập input, check theo class qi-chooseFile-signature bên file css để hiển thị -->
+                                        <input type="file" class="qi-chooseFile-signature" />
+                                        <div class="qi-rouded-bg-file-2 f-center">
+                                            <img src="image/phosphor-upload-simple.svg"
+                                                style="width: 28px; height: 28px" alt="" />
+                                        </div>
+                                        <p>Kéo thả tài liệu vào đây1</p>
+                                        <p>Chọn tài liệu từ máy tính của bạn</p>
+                                        <p>
+                                            <span class="qi-blue-Text">Lưu ý:</span> Hệ thống chỉ hỗ
+                                            trợ tải lên các file có định dạng:<span class="qi-blue-Text">
+                                                .pdf .doc .docx .xls .xlsx .pptx .ppt .png</span>
+                                            Dung lượng file tối đa:<span class="qi-blue-Text">
+                                                25Mb
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="qi-signature-action-file flex ai-center j-between">
+                                        <div class="qi-signature-action-file-left flex j-center ai-center">
+                                            <input type="checkbox" id="scales" />
+                                            <label for="scales">Tự động chuyển đổi qua định dạng PDF</label>
+                                        </div>
+                                        <div class="qi-signature-action-file-right">
+                                            <div class="qi-signature-action-file-right flex gap-2">
+                                                <img src="image/Pedagogic book.svg" alt="" />
+                                                <p>Xem file</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-container qi-custom-form-container-signature">
+                                        <div class="full-width">
+                                            <!-- ẩn hiện ui required bằng cách thêm class hidden vào thẻ span chứa class qi-star-tag, mặc định hiện -->
+                                            <p class="qi-text-label-input-signature">
+                                                Tên hồ sơ trình ký <span class="qi-star-tag">*</span>
+                                            </p>
+                                            <input class="qi-text-label-main-input-signature" type="text" />
+                                        </div>
+                                        <!-- Kỳ nộp -->
+                                        <div class="form-group">
+                                            <label for="period">Kỳ nộp</label>
+                                            <select id="period">
+                                                <option value="week1">Tuần 1 - Tháng 12/2024</option>
+                                                <option value="week2">Tuần 2 - Tháng 12/2024</option>
+                                            </select>
+                                        </div>
+                                        <!-- Giáo viên -->
+                                        <div class="form-group">
+                                            <label for="teacher">Giáo viên</label>
+                                            <select id="teacher2">
+                                                <option value="teacher1">Lê Bá Huy</option>
+                                                <option value="teacher2">Nguyễn Văn A</option>
+                                            </select>
+                                        </div>
+                                        <!-- Khối -->
+                                        <div class="form-group">
+                                            <label for="grade">Khối</label>
+                                            <select id="grade">
+                                                <option value="grade9">Khối 9</option>
+                                                <option value="grade10">Khối 10</option>
+                                            </select>
+                                        </div>
+                                        <!-- Môn học -->
+                                        <div class="form-group">
+                                            <label for="subject">Môn học</label>
+                                            <select id="subject">
+                                                <option value="tech">Kỹ thuật</option>
+                                                <option value="math">Toán</option>
+                                            </select>
+                                        </div>
+                                        <!-- Ghi chú -->
+                                        <div class="form-group full-width">
+                                            <label for="note">Ghi chú</label>
+                                            <input type="text" id="note" placeholder="Nhập ghi chú..." />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="qualityControl">Kiểm định chất lượng</label>
+                                            <select id="qualityControl">
+                                                <option value="qualityControl9">--- Chọn ---</option>
+                                                <option value="qualityControl9">Tốt</option>
+                                                <option value="qualityControl10">Đểu</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qi-signature-tab1">
+                                <div class="qi-signature-tab1-head flex j-between ai-center">
+                                    <div class="flex j-center ai-center">
+                                        <div class="qi-bg-file-head-signature">
+                                            <img src="image/icon-file.svg" alt="" />
+                                        </div>
+                                        <p>1.2 Tải file liên quan đính kèm (nếu có)</p>
+                                    </div>
+                                    <div class="">
+                                        <div class="qi-button-signature-file flex j-center ai-center gap-2">
+                                            <img src="image/plus.svg" alt="" />
+                                            <p>Tải file đính kèm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="qi-signature-tab1-body">
+                                    <div class="fixTableHead-2">
+                                        <table class="table table-bordered table-striped table-hover">
+                                            <thead class="theadMain">
+                                                <tr class="text-center">
+                                                    <th class="thLabelHeader">Stt</th>
+                                                    <th class="thLabelHeader">Xóa</th>
+                                                    <th class="thLabelHeader th-left">Tên file</th>
+                                                    <th class="thLabelHeader">Thời gian tải</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbodyMain">
+                                                <!-- Row 1 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">1</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 1 -->
+
+                                                <!-- Row 2 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">2</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 2 -->
+
+                                                <!-- Row 3 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">3</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 3 -->
+
+                                                <!-- Row 4 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">4</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 4 -->
+                                                <!-- Row 4 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">5</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 4 -->
+                                                <!-- Row 4 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">6</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 4 -->
+                                                <!-- Row 4 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">7</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 4 -->
+                                                <!-- Row 4 -->
+                                                <tr>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center qi-showInfo">8</div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <img src="image/delete.svg" alt="" />
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="td-left">
+                                                            <p class="signature-text-table">
+                                                                228-3844-931-7689
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td style="height: 1px">
+                                                        <div class="f-center">10/10/2024</div>
+                                                    </td>
+                                                </tr>
+                                                <!-- end Row 4 -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane fade qi-tab-signature">
+                        <div class="qi-signature-tab1" style="height: 94%">
+                            <div class="qi-signature-tab1-head flex j-between ai-center">
+                                <div class="flex j-center ai-center">
+                                    <div class="qi-bg-file-head-signature">
+                                        <img src="image/icon-file.svg" alt="" />
+                                    </div>
+                                    <p>2.1 Chọn người ký</p>
+                                </div>
+                            </div>
+                            <div class="qi-signature-tab1-body">
+                                <div class="fixTableHead-3">
+                                    <table class="table table-bordered table-striped table-hover">
+                                        <thead class="theadMain">
+                                            <tr class="text-center">
+                                                <th class="thLabelHeader">Thứ tự</th>
+                                                <th class="thLabelHeader th-left">Nhóm đối tượng</th>
+                                                <th class="thLabelHeader">Người ký</th>
+                                                <th class="thLabelHeader">Ký điện tử</th>
+                                                <th class="thLabelHeader">Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbodyMain">
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">1</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">Tổ phó</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher3">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="42" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">2</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Tổ trưởng bộ môn
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher4">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="41" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">3</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Cán bộ quản lý
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher1">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="4" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">1</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">Tổ phó</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher3">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="42" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">2</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Tổ trưởng bộ môn
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher4">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="41" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">3</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Cán bộ quản lý
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher1">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="4" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">1</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">Tổ phó</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher3">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="42" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">2</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Tổ trưởng bộ môn
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher4">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="41" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">3</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Cán bộ quản lý
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher1">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="4" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">1</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">Tổ phó</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher3">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="42" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">2</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Tổ trưởng bộ môn
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher4">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="41" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">3</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Cán bộ quản lý
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher1">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="4" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">1</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">Tổ phó</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher3">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="42" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">2</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Tổ trưởng bộ môn
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher4">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="41" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">3</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Cán bộ quản lý
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher1">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="4" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">1</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">Tổ phó</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher3">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="42" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">2</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Tổ trưởng bộ môn
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher4">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="41" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                            <!-- Row 2 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <p class="signature-text-table">3</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left qi-showInfo">
+                                                        Cán bộ quản lý
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="form-group-2">
+                                                        <select id="teacher1">
+                                                            <option value="teacher1">Lê Bá Huy</option>
+                                                            <option value="teacher2">Nguyễn Văn A</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input id="4" type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <img src="image/trash.svg" alt="" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 2 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane fade qi-tab-signature">
+                        <div class="qi-signature-tab1" style="height: 94%">
+                            <div class="qi-signature-tab1-head flex j-between ai-center">
+                                <div class="flex j-center ai-center">
+                                    <div class="qi-bg-file-head-signature">
+                                        <img src="image/icon-file.svg" alt="" />
+                                    </div>
+                                    <p>3. Chèn ảnh ký</p>
+                                </div>
+                            </div>
+                            <div class="qi-signature-tab1-body">
+                                <div class="fixTableHead-3">
+                                    <div class="qi-tab3-signature-main flex">
+                                        <div class="qi-tab3-signature-left"></div>
+                                        <div class="qi-tab3-signature-right">
+                                            <div class="qi-tab3-signature-right-top gap-6 flex j-between ai-center">
+                                                <div class="qi-signature-reset flex ai-center gap-2">
+                                                    <img src="image/Reset.svg" alt="" />
+                                                    <p class="truncate">Reset chữ đã ký</p>
+                                                </div>
+                                                <p class="qi-text-head-tooltip-signature truncate" data-toggle="tooltip"
+                                                    title="Hướng dẫn: bạn có thể chọn nhiều ảnh và kéo thả vào vị trí ký">
+                                                    Hướng dẫn: bạn có thể chọn nhiều ảnh và kéo thả vào
+                                                    vị trí ký
+                                                </p>
+                                            </div>
+                                            <div class="qi-tab3-signature-right-content">
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="qi-signature-cart">
+                                                    <div class="qi-img-cart-signature"></div>
+                                                    <div class="qi-signature-cart-content flex j-between ai-center">
+                                                        <div class="qi-signature-cart-content-left">
+                                                            <p class="truncate">LÊ BÁ HUY</p>
+                                                            <p class="truncate">Hiệu trưởng</p>
+                                                        </div>
+                                                        <div class="qi-signature-cart-content-right">
+                                                            <div class="qi-convert-rouded-signature-plus">
+                                                                <img src="image/plus-rouded-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="qi-tab3-signature-right-bottom">
+                                                <!-- Footer -->
+                                                <div class="row">
+                                                    <div class="col-xs-12 text-center flex f-center gap-2 ai-center">
+                                                        <label for="page-number">Chọn trang cần chèn chữ ký</label>
+                                                        <input type="number" id="page-number"
+                                                            class="form-control inline-block"
+                                                            style="width: 60px; display: inline-block" />
+                                                        <button class="btn btn-primary">Áp dụng</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qi-button-signature-submit flex j-end ai-center">
+                <div class="qi-signature-button-close">
+                    <p class="qi-text-signature-button-submit1">Đóng</p>
+                </div>
+                <div class="qi-signature-button-submit">
+                    <p class="qi-text-signature-button-submit2">Ghi</p>
+                    <img src="image/icon-file-white.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

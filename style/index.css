@@ -1,0 +1,729 @@
+.qi-modal-sign {
+    width: 100%;
+    height: 100vh;
+    background: #bdbdbd38;
+}
+
+.qi-box-modal {
+    width: 70vw;
+    height: 95vh;
+    background: #f8f7f7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    position: relative;
+}
+
+.qi-head-modal-signature {
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 111;
+    padding: 10px 20px;
+}
+
+.qi-text-head-signature {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #323743FF;
+}
+
+.qi-rouded-bg-head {
+    padding: 12px !important;
+    background: #F3F4F6FF;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    cursor: pointer;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transform: scale(.7) !important;
+    -webkit-transform: scale(.7) !important;
+    -moz-transform: scale(.7) !important;
+    -ms-transform: scale(.7) !important;
+    -o-transform: scale(.7) !important;
+}
+
+.qi-rouded-bg-head:hover {
+    background: rgba(187, 189, 192, 0.418)
+}
+
+.qi-body-modal-signature {
+    height: calc(100% - 120px);
+    width: 100%;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.nav-tabs>li>a {
+    color: #929292;
+    font-weight: bold;
+    border: none;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #1E64DDFF;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.nav-tabs>li.active>a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #1E64DDFF;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.qi-rouded-bg-file {
+    padding: 10px;
+    background: #cfdffa5e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    margin-right: 8px;
+}
+
+.qi-tab-content-signature-2 {
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 20px;
+
+}
+
+.qi-tab-signature::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.qi-tab-signature::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.qi-tab-signature::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.qi-tab-signature::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.qi-tab-signature {
+    width: 100%;
+    height: calc(100vh - 208px);
+    overflow-y: auto;
+}
+
+.qi-signature-tab1 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.qi-signature-tab1-head {
+    height: 60px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1);
+    padding: 10px 20px;
+}
+
+.qi-signature-tab1-head p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #323743FF;
+}
+
+.qi-bg-file-head-signature {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    margin-right: 8px;
+}
+
+.qi-signature-tab1-body {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.qi-signature-upload-file {
+    width: 100%;
+    height: 192px;
+    background: #F1F8FD99;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #197DCAFF;
+    border-style: dashed;
+    padding-top: 18px;
+    cursor: pointer;
+    padding: 0 40px;
+    padding-top: 20px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.qi-rouded-bg-file-2 {
+    width: 48px;
+    height: 48px;
+    background: #DAECFAFF;
+    margin-bottom: 16px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.qi-signature-upload-file p:nth-child(3) {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #424856FF;
+}
+
+.qi-signature-upload-file p:nth-child(4) {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #323743FF;
+    text-decoration: underline;
+    margin-top: 4px;
+}
+
+.qi-signature-upload-file p:nth-child(5) {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6F7787FF;
+    margin-top: 12px;
+    width: 80%;
+    text-align: center;
+}
+
+.qi-blue-Text {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #1E64DDFF;
+}
+
+.qi-chooseFile-signature {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.qi-signature-action-file-left label {
+    margin: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.qi-signature-action-file-left label:hover {
+    text-decoration: underline;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.qi-signature-action-file-left input {
+    cursor: pointer;
+    margin: 0;
+    margin-right: 4px;
+}
+
+.qi-signature-action-file-right {
+    color: #1E64DDFF;
+}
+
+.qi-signature-action-file-right:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.qi-signature-action-file {
+    margin-bottom: 24px;
+}
+
+.qi-text-label-input-signature {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #171A1FFF;
+    margin-bottom: 5px;
+}
+
+.qi-text-label-main-input-signature {
+    all: unset;
+    border: 1px solid #BDC1CAFF;
+    width: calc(100% - 20px);
+    height: 36px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .1s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+.qi-text-label-main-input-signature:hover {
+    border: 1px solid rgb(60, 126, 239);
+}
+
+.qi-text-label-main-input-signature:focus {
+    border: 1px solid rgb(60, 126, 239);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1);
+}
+
+.qi-star-tag {
+    color: red !important;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 cột, mỗi cột chia đều */
+    gap: 10px;
+    /* Khoảng cách giữa các ô */
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-container .full-width {
+    grid-column: 1 / 3;
+    /* Trải dài cả 2 cột */
+}
+
+.form-group-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-2 label {
+    font-weight: bold;
+}
+
+.form-group-2 select,
+.form-group-2 input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group-2 select:focus,
+.form-group-2 input:focus {
+    outline: none;
+    border-color: #006eff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #006eff;
+    /* Đổi màu viền khi focus */
+}
+
+.qi-custom-form-container-signature {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.qi-button-signature-file {
+    padding: 5px 10px;
+    background: #1E64DDFF;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+}
+
+.qi-button-signature-file:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.qi-button-signature-file p {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.fixTableHead-2 {
+    overflow-y: auto;
+    height: fit-content;
+    max-height: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.fixTableHead-3 {
+    height: fit-content;
+    height: 90%;
+    overflow-y: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow-x: hidden;
+}
+
+.fixTableHead-2 thead th {
+    position: sticky;
+    top: 0;
+}
+
+.fixTableHead-2::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.fixTableHead-2::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.fixTableHead-2::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.fixTableHead-2::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.fixTableHead-3 thead th {
+    position: sticky;
+    top: 0;
+}
+
+.fixTableHead-3::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.fixTableHead-3::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.fixTableHead-3::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.fixTableHead-3::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.qi-button-signature-submit {
+    height: 50px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    z-index: 1111;
+    border-top: 1px solid #F3F4F6FF;
+}
+
+.qi-signature-button-submit {
+    width: 116px;
+    height: 36px;
+    background: #1E64DDFF;
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.qi-signature-button-submit:hover {
+    background: rgba(41, 108, 225, 0.875);
+
+}
+
+.qi-signature-button-close:hover {
+    background: rgb(213, 216, 221);
+
+}
+
+.qi-signature-button-submit img {
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.qi-signature-button-close {
+    background: #F3F4F6FF;
+    width: 116px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.qi-text-signature-button-submit1 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #565D6DFF;
+}
+
+.qi-text-signature-button-submit2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.tdHeightCheckBox:hover {
+    cursor: pointer;
+}
+
+.qi-tab3-signature-main {
+    width: 100%;
+    height: 100%;
+}
+
+.qi-tab3-signature-left {
+    width: 55%;
+    height: 100%;
+    background: #f0f1f05c;
+}
+
+.qi-tab3-signature-right {
+    width: 45%;
+    height: 100%;
+    background: white;
+    border-left: 1px solid rgba(210, 210, 211, 0.83)
+}
+
+.qi-tab3-signature-right-top {
+    height: 50px;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.qi-tab3-signature-right-content {
+    height: calc(100% - 100px);
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;
+    padding-right: 0;
+    padding-bottom: 10px;
+}
+
+.qi-tab3-signature-right-content::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.qi-tab3-signature-right-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.qi-tab3-signature-right-content::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.qi-tab3-signature-right-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.qi-tab3-signature-right-bottom {
+    height: 50px;
+    width: 100%;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qi-tab3-signature-right-bottom label {
+    margin: 0;
+}
+
+.qi-signature-reset p {
+    color: #1E64DDFF;
+    font-size: 13px;
+
+}
+
+.qi-signature-reset img {
+    width: 16px;
+    height: 16px;
+}
+
+.qi-signature-reset:hover {
+    cursor: pointer;
+}
+
+.qi-text-head-tooltip-signature:hover {
+    cursor: pointer;
+}
+
+.qi-text-head-tooltip-signature {
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+.qi-signature-cart {
+    flex: 0 0 calc(50% - 10px);
+    height: 190px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.qi-img-cart-signature {
+    width: 100%;
+    height: 120px;
+    background: #d1d1d1;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.qi-signature-cart-content {
+    height: calc(100% - 120px);
+    width: 100%;
+    margin-top: 8px;
+}
+
+.qi-signature-cart-content-left {
+    text-align: left;
+}
+
+.qi-signature-cart-content-left p:nth-child(1) {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.qi-signature-cart-content-left p:nth-child(2) {
+    font-weight: 500;
+    font-size: 12px;
+    color: #7b7b7b;
+}
+
+.qi-convert-rouded-signature-plus {
+    padding: 2px;
+    border: 1px solid #1E64DDFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
