@@ -509,6 +509,21 @@
 .qi-signature-button-submit {
     width: 116px;
     height: 36px;
+    background: #F3F4F6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-left: 8px;
+}
+
+.qi-signature-button-submit-and-save {
+    width: 146px;
+    height: 36px;
     background: #1E64DDFF;
     gap: 2px;
     display: flex;
@@ -524,8 +539,11 @@
 }
 
 .qi-signature-button-submit:hover {
-    background: rgba(41, 108, 225, 0.875);
+    background: rgb(213, 216, 221);
+}
 
+.qi-signature-button-submit-and-save:hover {
+    background: rgba(41, 108, 225, 0.875);
 }
 
 .qi-signature-button-close:hover {
@@ -534,11 +552,11 @@
 }
 
 .qi-signature-button-submit img {
-    transform: scale(.8);
-    -webkit-transform: scale(.8);
-    -moz-transform: scale(.8);
-    -ms-transform: scale(.8);
-    -o-transform: scale(.8);
+    transform: scale(.6);
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -ms-transform: scale(.6);
+    -o-transform: scale(.6);
 }
 
 .qi-signature-button-close {
@@ -564,6 +582,14 @@
 .qi-text-signature-button-submit2 {
     font-size: 14px;
     font-weight: 400;
+    color: #565D6DFF;
+    margin-top: 2px;
+}
+
+.qi-text-signature-button-submit3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 2px;
     color: white;
 }
 
@@ -731,4 +757,12 @@
 
 .cke_notifications_area {
     display: none;
+}
+
+.qi-signature-button-submit-and-save img {
+    transform: scale(.7);
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -ms-transform: scale(.7);
+    -o-transform: scale(.7);
 }
