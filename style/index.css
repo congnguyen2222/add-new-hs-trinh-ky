@@ -577,13 +577,13 @@
 }
 
 .qi-tab3-signature-left {
-    width: 55%;
+    width: 70%;
     height: 100%;
     background: #f0f1f05c;
 }
 
 .qi-tab3-signature-right {
-    width: 45%;
+    width: 30%;
     height: 100%;
     background: white;
     border-left: 1px solid rgba(210, 210, 211, 0.83)
@@ -638,6 +638,7 @@
 
 .qi-tab3-signature-right-bottom label {
     margin: 0;
+    font-size: 13px;
 }
 
 .qi-signature-reset p {
@@ -666,7 +667,7 @@
 }
 
 .qi-signature-cart {
-    flex: 0 0 calc(50% - 10px);
+    flex: 0 0 100%;
     height: 190px;
     text-align: center;
     border: 1px solid #ddd;
@@ -726,4 +727,8 @@
     -o-border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+}
+
+.cke_notifications_area {
+    display: none;
 }
