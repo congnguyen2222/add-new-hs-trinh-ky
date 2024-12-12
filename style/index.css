@@ -5,7 +5,7 @@
 }
 
 .qi-box-modal {
-    width: 70vw;
+    width: 80vw;
     height: 95vh;
     background: #f8f7f7;
     border-radius: 4px;
@@ -637,157 +637,11 @@
 }
 
 .qi-tab3-signature-left {
-    width: 70%;
+    width: 65%;
     height: 100%;
     background: #f0f1f05c;
 }
 
-.qi-tab3-signature-right {
-    width: 30%;
-    height: 100%;
-    background: white;
-    border-left: 1px solid rgba(210, 210, 211, 0.83)
-}
-
-.qi-tab3-signature-right-top {
-    height: 50px;
-    width: 100%;
-    padding: 5px 20px;
-}
-
-.qi-tab3-signature-right-content {
-    height: calc(100% - 100px);
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 0 20px;
-    padding-right: 0;
-    padding-bottom: 10px;
-}
-
-.qi-tab3-signature-right-content::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-.qi-tab3-signature-right-content::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-
-.qi-tab3-signature-right-content::-webkit-scrollbar-thumb {
-    background: #afafaf;
-    border-radius: 10px;
-}
-
-.qi-tab3-signature-right-content::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.qi-tab3-signature-right-bottom {
-    height: 50px;
-    width: 100%;
-    background: #FAFAFA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.qi-tab3-signature-right-bottom label {
-    margin: 0;
-    font-size: 13px;
-}
-
-.qi-signature-reset p {
-    color: #1E64DDFF;
-    font-size: 13px;
-
-}
-
-.qi-signature-reset img {
-    width: 16px;
-    height: 16px;
-}
-
-.qi-signature-reset:hover {
-    cursor: pointer;
-}
-
-.qi-text-head-tooltip-signature:hover {
-    cursor: pointer;
-}
-
-.qi-text-head-tooltip-signature {
-    font-size: 13px;
-    font-weight: 500;
-
-}
-
-.qi-signature-cart {
-    flex: 0 0 100%;
-    height: 190px;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-sizing: border-box;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-
-.qi-img-cart-signature {
-    width: 100%;
-    height: 120px;
-    background: #d1d1d1;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-
-.qi-signature-cart-content {
-    height: calc(100% - 120px);
-    width: 100%;
-    margin-top: 8px;
-}
-
-.qi-signature-cart-content-left {
-    text-align: left;
-}
-
-.qi-signature-cart-content-left p:nth-child(1) {
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: .5px;
-}
-
-.qi-signature-cart-content-left p:nth-child(2) {
-    font-weight: 500;
-    font-size: 12px;
-    color: #7b7b7b;
-}
-
-.qi-convert-rouded-signature-plus {
-    padding: 2px;
-    border: 1px solid #1E64DDFF;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-}
 
 .cke_notifications_area {
     display: none;
@@ -803,4 +657,167 @@
 
 .form-group-custom {
     margin-bottom: 0px;
+}
+
+.qi-tab3-signature-right {
+    width: 35%;
+    height: 100%;
+    background: white;
+    padding-left: 16px;
+    padding-right: 2px;
+}
+
+.qi-tab3-signature-right-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 1px solid #F3F4F6FF;
+}
+
+.qi-tab3-signature-right-box-top {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #F3F4F6FF;
+    padding: 16px;
+}
+
+.qi-tab3-signature-right-box-top img {
+    margin-right: 6px;
+}
+
+.qi-tab3-signature-right-box-top p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #323743FF;
+}
+
+.qi-tab3-signature-right-box-bottom {
+    padding: 10px 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;
+}
+
+
+.qi-tab3-signature-right-box-bottom::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.qi-tab3-signature-right-box-bottom::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.qi-tab3-signature-right-box-bottom::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.qi-tab3-signature-right-box-bottom::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.qi-tab3-signature-right-box-bottom-text-header {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #323743FF;
+    margin-bottom: 10px;
+}
+
+.form-group-custom label {
+    font-size: 14px !important;
+    line-height: 22px;
+    font-weight: 600;
+    color: #323743FF;
+}
+
+/* Đảm bảo container responsive */
+.form-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Đảm bảo form-group đầy đủ chiều rộng */
+.qi-custom-form-container-signature {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Giới hạn chiều rộng của select và xử lý overflow */
+select {
+    width: 100%;
+    /* Để select co dãn theo container */
+    max-width: 100%;
+    /* Đảm bảo không tràn ngoài */
+    white-space: nowrap;
+    /* Không cho chữ xuống dòng */
+    overflow: hidden;
+    /* Ẩn phần nội dung tràn */
+    text-overflow: ellipsis;
+    /* Hiển thị dấu "..." nếu quá dài */
+}
+
+/* Đảm bảo responsive trên màn hình nhỏ */
+@media (max-width: 600px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        /* Chỉ 1 cột trên màn hình nhỏ */
+    }
+}
+
+.qi-signature-main-img-option {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    margin-top: 6px;
+}
+
+.qi-signature-main-img-option-left {
+    height: 100%;
+    width: 67.5%;
+}
+
+.qi-signature-main-img-option-right {
+    height: 100%;
+    width: 32.5%;
+}
+
+.img-signature-main {
+    width: 70%;
+    height: 100%;
+}
+
+.img-signature-main img {
+    width: 100%;
+    height: 100%;
+    padding-right: 4px;
+}
+
+.qi-signature-main-img-option-left p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #323743FF;
+    margin-top: 3px;
+}
+
+.signature-item {
+    margin-bottom: 24px;
 }
