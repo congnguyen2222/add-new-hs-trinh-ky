@@ -741,7 +741,7 @@
 }
 
 /* Đảm bảo container responsive */
-.form-container {
+.form-container-signature {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
@@ -776,7 +776,7 @@ select {
 
 /* Đảm bảo responsive trên màn hình nhỏ */
 @media (max-width: 600px) {
-    .form-container {
+    .form-container-signature {
         grid-template-columns: 1fr;
         /* Chỉ 1 cột trên màn hình nhỏ */
     }
