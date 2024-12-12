@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 // Khởi tạo CKEditor trên textarea
 CKEDITOR.replace("note", {
-  height: 200, // Chiều cao editor
+  height: 100, // Chiều cao editor
   toolbar: [
     ["Bold", "Italic", "Underline", "Strike", "-", "RemoveFormat"],
     ["NumberedList", "BulletedList", "-", "Outdent", "Indent"],
